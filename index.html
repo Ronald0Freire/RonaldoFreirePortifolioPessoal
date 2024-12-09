@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <!--Titulo da página-->
+    <title>Ronaldo Freire Portifólio</title>
+    <link rel="icon" href="" />
+    <!--Linkando CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="container"><!--Cabeçalho da página, linkando os principais componentes da página-->
+            <div class="logo">Ronaldo Freire</div>
+            <ul class="links"> <!--Lista com os componentes-->
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--Seria o equivalente a página principal-->
+        <section id="sobre-mim" class="dev container"> <!--Seção sobre mim-->
+            <div class="sobre-texto">
+                <h1>Ronaldo Freire</h1>
+                <p>Tendo experiências com computadores e eletrônica desde meu ensino médio, obtive formação como técnico em elêtronica, área essa que atuo a mais de 5 anos. Atualmente me encontro em processo de mudança de carreira, visando me tornar um desenvolvedor de softwares. Tenho conhecimento em Git e Github e venho me especializando na parte Back-end e também em Front-end estudando React com Typescript, HTML e CSS.</p>
+                <a class="botao-de-contato" href="#contato">Entre em contato</a><!--Botão linkando a parte de contato-->
+            </div>
+            <div class="imagem-sobre">
+                <img src="/assets/imagem-sobre.png" class="imagem-sobre-grid">
+            </div>
+        </section>
+        <section id="formacao" class="container"> <!--Seção de formações-->
+            <h2>Formação</h2>
+            <div class="formacao-grid">
+                <div class="formacao-itens">
+                    <h3>Técnico Eletrônica Industrial</h3>
+                    <p>Senai Jacarepaguá</p>
+                    <p>Período: 2015 - 2017</p>
+                </div>
+                <div class="formacao-itens">
+                    <h3>Cabista de Sistemas de Telecom</h3>
+                    <p>Senai Jacarepaguá</p>
+                    <p>Período: 2017</p>
+                </div>
+                <div class="formacao-itens">
+                    <h3>Operador de TI</h3>
+                    <p>Senai Jacarepaguá</p>
+                    <p>Período: 2019</p>
+                </div>
+                <div class="formacao-itens">
+                    <h3>Desenvolvimento Web Full Stack JavaScript</h3>
+                    <p>Generation Brasil </p>
+                    <p>Período: 2022 - 2023</p>
+                </div>
+                <div class="formacao-itens">
+                    <h3>Curso Técnico Equipamentos Medpej</h3>
+                    <p>Medpej </p>
+                    <p>Período: 2023</p>
+                </div>
+                <div class="formacao-itens">
+                    <h3>Curso Técnico Equipamentos TEB</h3>
+                    <p>TEB</p>
+                    <p>Período: 2023</p>
+                </div>
+            </div>
+        </section>
+        <section id="portifolio" class="container"><!--Seção do portifolio-->
+            <h2>Portifólio</h2>
+            <div class="portifolio-grid">
+                <div class="portifolio-card">
+                    <h3 class="titulo-portifolio"> Blog Pessoal </h3>
+                    <p>Recentemente, desenvolvi um blog pessoal do zero. O blog possui funcionalidades como sistema de autenticação, criação e edição de postagens, comentários, pesquisa e design responsivo. Este projeto me permitiu aprimorar minhas habilidades em desenvolvimento web, gerenciamento de estado, segurança e otimização de desempenho.</p>
+                    <div class="portifolio-tags">
+                        <span>HTML</span><!--utilizando a tag span p/ criar caixinhas com as técnologias utilizadas-->
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                <div class="portifolio-card">
+                    <h3 class="titulo-portifolio">E-commerce</h3>
+                    <p>Recentemente, desenvolvi um e-commerce sustentável do zero. O e-commerce oferece funcionalidades como sistema de autenticação, catálogo de produtos, carrinho de compras, checkout seguro e design responsivo. Este projeto me permitiu aprimorar minhas habilidades em desenvolvimento web, integração de sistemas de pagamento, segurança e otimização de desempenho, além de promover práticas sustentáveis no comércio eletrônico.</p>
+                    <div class="portifolio-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>TypeScript</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="portifolio-card">
+                    <h3 class="titulo-portifolio">nlw-esports-ignite</h3>
+                    <p>Projeto construído durante o Next Level Week eSports, na trilha Ignite. </p>
+                    <div class="portifolio-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato"> <!--Seção de contatos-->
+            <div class="container">
+                <h2 class="titulo-contato">Contato</h2>
+                <form class="formulario-contato">
+                    <div class="grupo-formulario">
+                        <label form="nome">Nome</label>
+                        <input id="nome" name="nome" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label form="email">Email</label>
+                        <input id="email" email="email" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label form="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+        <footer> <!--Rodapé da página, com redes sociais-->
+                <div class="icones">
+                <a target="_blank" href="//www.instagram.com/ronaldo.freiree"><img src="assets/redes/InstagramLogo.png" class="media-object  img-responsive img-thumbnail"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ronaldo-freire-984021188/?originalSubdomain=br"><img src="assets/redes/LinkedinLogo.png" class="media-object  img-responsive img-thumbnail"></a>
+                <a target="_blank" href="//www.youtube.com"><img src="assets/redes/YoutubeLogo.png" class="media-object  img-responsive img-thumbnail"></a>
+                <a target="_blank" href="https://github.com/Ronald0Freire"><img src="assets/redes/githubLogo.png" class="media-object  img-responsive img-thumbnail"></a> 
+                </div>
+                    <p>Ronaldo Freire - Desenvolvedor Web</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

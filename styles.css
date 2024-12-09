@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset CCS */
+body{
+background-image: url(./assets/Fundo.jpg);
+background-position: top center;
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-color: #121214;
+}
+
+/*estilização cabeçalho*/
+header {
+    background-color: #262629;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(226, 226, 226);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.links li {
+    margin: 1rem;
+}
+
+/*estilização da fonte utilizado em todo o body*/
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 1;
+}
+
+main{
+    margin-top: 6rem;
+}
+
+nav a:hover {
+    color: #bbbbbb;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+.dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+ 
+/*estilização botão sobre mim*/
+
+.imagem-sobre {
+    position: relative;
+    padding-left: 7rem;
+}
+
+.imagem-sobre-grid {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    object-fit: cover;
+}
+
+.sobre-texto {
+    padding: 6rem;
+}
+
+.sobre-texto h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(226, 226, 226);
+}
+
+.sobre-texto p {
+    color: rgb(170, 170, 170);
+    margin-bottom: 2rem;
+}
+
+/*estilização botão sobre mim*/
+.botao-de-contato {
+    text-decoration: none;
+    color: white;
+    background-color: #262629;
+    padding: 0.80rem 1.5rem;
+    border-radius: 3px;
+    transition: 1;
+}
+
+.botao-de-contato:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/*estilização formação */
+
+.formacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.formacao-itens {
+    text-align: center;
+    background-color: #262629;
+    padding: 0.60rem 1rem;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.formacao-itens:hover{
+    transform: scale(1.05);
+}
+
+.formacao-itens h3  {
+    color: rgb(226, 226, 226);
+    padding-bottom: 1rem;
+}
+
+.formacao-itens p  {
+    color: rgb(170, 170, 170);
+}
+
+/*estilização portifólio*/
+
+#portifolio, #formacao {
+    margin: 80px 0;
+}
+
+.portifolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portifolio-card {
+    background-color: #262629;
+    border-radius: 5px;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+.portifolio-card:hover {
+    transform: scale(1.05);
+}
+
+.titulo-portifolio {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    color: rgb(226, 226, 226);
+}
+
+.portifolio-card p {
+    color: rgb(170, 170, 170);
+}
+
+.portifolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.portifolio-tags span {
+    background-color: #555555;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*estilização formulário contato */
+
+.contato {
+    background-color: #262629
+}
+
+.formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+    color: rgb(226, 226, 226);
+}
+
+input, textarea {
+    background-color: #555555;
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    width: 100%;   
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 41%);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    color: rgb(226, 226, 226);
+    border-radius: 5px;
+    margin-left: 165px;
+}
+
+/*estilização do footer*/
+
+footer {
+    background-color:#000000;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+footer p {
+    color:  rgb(226, 226, 226);
+}
+
+.icones {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    color:  rgb(226, 226, 226);
+}
+
